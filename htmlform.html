@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>this is form</h2>
+    <form action="backended.php"><!--go to backend.php and submit those data-->
+        <label for="name">name</label>
+        <div>
+            <input type="text"   id="name">
+        </div>
+      <div>
+          <fieldset>
+              <legend>role </legend> role:<input type="text" required></fieldset>
+       
+      </div>
+      <div>
+        email:<input type="email" name="myemail"><!-- name is type by which backended get email-->
+      </div>
+      <div>
+          date:<input type="date">
+      </div>
+      <div>
+          bonus:<input type="number">
+      </div>
+      <div>
+          are you <input type="checkbox" checked>
+      </div>
+      <div>
+          gender:male<input type="radio" name="mygender">female<input type="radio" name="mygender">
+      </div>
+      <div>
+          write:<textarea name="myttext" cols="10" rows="3"></textarea>
+      </div>
+      <div>
+          <label for="mycar">cars</label>
+          <select name="car" id="mycar">
+              <option value="ind" selected>indica</option>
+              <option value="swift">swift</option>
+          </select> 
+      </div>
+<input type="submit" value="submit now">
+<input type="reset" value="reset">
+    </form>
+</body>
+</html>

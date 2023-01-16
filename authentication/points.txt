@@ -1,0 +1,27 @@
+encryption
+
+password + key ----cipher method---->cipher text
+
+
+decryption
+
+password  <---------cipher method--      key+ciphertext
+
+
+
+caeser cipher we use above is every unsafe method 
+
+
+//////hashing method
+
+encription
+passsword  -----hash function---> Hash
+its almost impossible to get password from hash
+
+during registration password is hash and store in database
+during login password is again hash and compare that hash with hash in database
+
+
+hash for same string is same means hash for 12345 is same
+
+

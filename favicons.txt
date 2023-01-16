@@ -1,0 +1,7 @@
+
+favicon.cc were we can create
+
+include it in head tag
+
+<link rel="icon" href="favicon.ico">//npm is package manager
+//help to manage package

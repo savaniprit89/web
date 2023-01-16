@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function
+    </div>
+    <script>
+        //arrow function are shirtcut
+        function greet()
+        {
+            console.log("good morning");
+        }
+        greet();
+        
+        let greet1 = ()=>{
+            console.log('good morning');
+        }
+        greet1();
+        let greet2= () =>console.log("good morning");
+//here greet and greet1 and greet2 are same 
+
+
+
+
+        let sum= (a,b)=>
+        {
+            return a+b;
+        }
+
+        let sum1= (a,b)=>a+b;
+//here sum and sum1 are same
+
+
+
+        let half= a=> a/2;//if one argument then written like this
+
+
+
+        let obj=
+        {
+            greeting:"gm",
+            name:["a","b","c","d"],
+            speak()
+            {
+               this.name.forEach((student)=>
+               {
+                    console.log(student+this.greeting);//ayya this obj ma gotatse 
+                    //here this is lexical this
+                    //if arrow function then parent no this hase e
+                    //and not arrow then e potano this 
+               });
+            }
+            /*
+            speak()
+            {
+               this.name.forEach(function s (student)
+               {
+                    console.log(student+this.greeting);//ayya this e function ma gotatse greeting ane e malse nai atle not work
+               });
+            }
+            */
+        }
+        obj.speak();
+
+    </script>
+</body>
+</html>

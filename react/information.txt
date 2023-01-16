@@ -1,0 +1,20 @@
+javascript library for building user interface
+
+
+PS C:\Users\addmin\desktop\webv\react> npx create-react-app my-app
+this for creating react-app
+
+cd my-app
+npm start
+You should see the React logo and a link to "Learn React" on http://localhost:3000 in your browser. We'll leave the web server running while we look at the application with VS Code.
+
+To open your React application in VS Code, open another terminal or command prompt window, navigate to the my-app folder and type code .:
+
+cd my-app
+code .
+Markd
+
+
+*//if we bring other people project to our then npm install for packages do
+
+WE can use material ui for customising things like button and other things

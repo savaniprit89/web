@@ -1,0 +1,25 @@
+
+git--local repository
+github-remote
+
+if we have file in working directory then add in stagging area
+here if are not commited so to add use git commit and add to local repository
+now we make changes in file then that are not reflected into local repository file
+so save changes we have to commit
+and we have revert changes then gitcheckout so file that in local have text that will be now on working directory files
+ 
+if we have to push on remote directory then simply git push
+
+
+and we have to get files from remote to local then git pull
+
+
+now any one want to download my file then git clone
+
+
+*****
+now anyone want to contribute to me then
+he has git fork so copy of files from my remote will be send to his remote
+and other person has to save this from remote to his local then git fetch
+.....
+now person has made changes ,now then he send to request me git pull request and now i can see what changes he made and i have like that changes and implement that then i can accept that pull request

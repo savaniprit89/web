@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[1,2,3];
+        array.push(10);
+        array.unshift(3);//insert element at start of array
+        array.pop();
+        array.shift();///remove element from start
+        array[0]={num:80};
+        console.log(array);
+
+        let channels=[
+            {
+                name:'a',
+                subscription:10
+            },
+            {
+                name:'b',
+                subscription:11
+            },
+            {
+                name:'c',
+                subscription: 12
+            }
+        ]
+       let p= channels.find(function(element)
+        {
+            return element.subscription==10
+        });
+
+        console.log(p);
+        console.log(channels.filter(subscription => {
+            return channels.subscription > 10
+        }))
+        console.log(channels.map(subscription => {
+            return channels.subscription * 10
+        }))
+
+        let a=[1,2];
+        let b=[3,4];
+        let c=a.concat(b);
+        let d=[...c,...a];
+        console.log(d);
+        console.log(c);
+
+
+        let students=['s','d','f','g'];
+        console.log(students.join());
+        console.log(students.join(''));
+        console.log(students.join('-'));
+
+        //console.log(students.split('-'))
+
+    
+    </script>
+</body>
+</html>

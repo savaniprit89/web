@@ -1,0 +1,43 @@
+going to amazon
+adding t shirt in basket
+
+
+// adding to cart ---> amazon has created cookies and added to browser
+
+
+
+now close google
+and again to amazon then it will be in cart
+
+
+//if we delete that cookies then cart will be empty
+
+
+
+
+*********************
+i type amazon.com
+my browser will make request to server for homepage
+server will respond html css javascript file
+now i added to cart then post request to server
+now server create a cookie and send along with response of post request
+
+now cookie is saved on browser
+
+
+now next time i make request to server
+cookie is sent along with get request to allow server i had previos session
+
+
+
+///session
+
+period of time when browser interacts with server
+when we login session starts and cookie is created
+inside cookie user login successfully and authentication
+so now you browse page requires authentication you no need to login agian
+
+you log out then session ends and cookie related to it ends
+
+
+

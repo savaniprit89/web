@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //json is used for data transport
+        let obj={
+            name:"prit",
+            channel:"cwh",
+            friend:"savani"
+        }
+        console.log(obj);
+
+        let myjson=JSON.stringify(obj);
+        console.log(myjson);//here obj is converted to string and all string function can be applied there
+
+       myjson= myjson.replace('cwh','code')
+       console.log(myjson);
+
+       newjsonobj=JSON.parse(myjson)///it take valid json object to convert into original
+       console.log(newjsonobj);
+    </script>
+</body>
+</html>

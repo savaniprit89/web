@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+          .box
+    {
+        background-color: red;
+        color: black;
+        font-size: 72px;
+        display: none;
+        text-align: center;
+    }
+    .cont
+    {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+@media (max-width:300px)
+{/*aya ony screen atle khali apade screen ne j support karava mata*/
+    body/*jya sudhi 0 thi 300 sudhi tyare box1 ni lagu thase*/
+    {
+       
+        background-color: burlywood;
+    }
+}
+@media (max-width:500px )and (min-width:300px)
+{
+  body
+    {
+        
+        background-color: chartreuse;
+    }
+    .cont
+    {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+    #aside
+    {
+        display: none;
+    }
+}
+@media(max-width:800px )and (min-width:500px)
+{
+    body{
+        background-color: cornflowerblue;
+    }
+    .cont
+    {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside '
+        'footer footer footer footer';
+    }
+    span
+    {
+        display: block;
+    };
+}
+@media (min-width:800px)
+{
+    body
+    {
+       
+        background-color: crimson;
+    }
+}
+.bord
+{
+    border: 2px solid red;
+    padding: 23px;
+    background-color: darkgreen;
+}
+#navbar
+               {
+grid-area: navbar;
+               }
+               #section
+               {
+                grid-area: section;
+               }
+               #aside
+               {
+                grid-area: aside;
+               }
+               #footer
+               {
+                   grid-area: footer;
+               }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <navbar class="bord" id="navbar">
+         
+            <span>
+                home 
+            </span><span>
+                about 
+            </span><span>
+                desktop
+            </span>
+        </navbar>
+        <section class="bord" id="section">
+            <h2>css in hind</h2>
+            </section>
+        <aside id="aside" class="bord">
+            <h1 >more about us</h1>
+        </aside>
+    </div>
+  <footer class="bord" id="footer">
+      copyright code with css 2020
+  </footer>
+</body>
+</html>

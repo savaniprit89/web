@@ -1,0 +1,101 @@
+client request for website. for example www.htmlcss.com
+this website is on server
+server response in return
+
+<p> xbajxb</p>
+<p> ajxjxb</p>
+is block element 
+block emelemt atle e akkhi space lai lese
+
+
+<span><p>this is paragaraph</p></span><span><p>this is paragaraph</p></sapn>
+span karu atle ek j line ma avse span inline elemet che
+<a>this is also inline so badhu j ek j line ma avvse
+
+
+<div id="mainbox" class=" redbg blackbg>
+</div>
+
+ayay id unique identify karava mate and  ek html ma ek j name nu id hovu pade
+atle k unique hoi and aane kai style karavi hoi toh css ma e id thi thse
+
+
+ek html ma gaame etla ne ek sarkhu class name and multiple pn dai sakaave
+jyare class devi atle etla element e class ni property ne absorb kari lese
+
+
+
+
+html entities
+
+reserve charater ans multiple space mate html entities use thai because apade ene directly use no sari sakvi
+
+**********************************
+semantic tags-navigation,header,footer,article 
+aaa tags ni use ne design atle webpage ani riti set thase
+
+----------------------------------
+<a href="ww.google.com>
+
+selector:-
+a[href="ww.google.com]
+----------------------------------
+<p> lorem ipsum....
+sispnnk anldnl...</p>
+
+p::first-line{
+color:brown;
+}
+----------------------------------
+selectors:
+span.special,li.special
+{
+}//here special is class
+----------------------------------
+body h1+p.special
+{
+}
+//here special is class of paragraph tag
+----------------------------------
+p#one
+{
+}
+//id is one of paragraph tag
+----------------------------------
+li[class="a"]
+{
+}
+//li tag ne class="a" apelu hoi e hoi
+----------------------------------
+text-transform:capitalize
+text-transform:uppercase
+text-transform:none
+text-transform:full-width
+letter spacing:normal
+text-indent:0
+text-indent:30%
+word spacig:normal
+word spacing:4px
+text shadow:3px 3px 2px black;
+table,th,td
+{
+border:1px solid black
+border-collapse:collapse
+border spacing:0;
+}
+th,td{
+padding
+:15px
+}
+
+
+nav
+{
+overflow:hidden
+}
+
+{
+grid-row-start:2;
+grid-row-end:3;
+grid-column-start=2;
+grid-column-end:3;

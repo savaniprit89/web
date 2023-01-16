@@ -1,0 +1,22 @@
+restful api
+representatial state transfer
+
+
+client---api---server
+rest is architectural style for designing api
+rest,graphql,soap
+
+two rules for restapi
+1)http verbs-get,put,post,patch,delete
+create-post
+read-get
+update-put(entire entry to update),patch(sending piece of data to update)
+delete-delete
+
+
+2)specific pattern of routes/endpoint
+GET---/ARTICLES(FETCH ALL ARTICLES)--------/ARTICLES/JACK-BAUER(FETCH ARTICLE ON JACK BAUER)
+POST--/ARTICLES(CREAT ONE NEW ARTICLE)
+PUT---/ARTICLES/JACK-BAUER(UPDATE SPECIFIC ARTICLE ON JACK-BAUER)
+PATCH--/ARTICLES/JACK-BAUER(UPDATE SPECIFIC ARTICLE ON JACK-BAUER)
+DELETE--/ARTICLES(DELETE ALL ARTICLES)----------/ARTICLES/JACK-BAUER(DELTE ARTICLE ON JACK-BAUER)

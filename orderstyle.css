@@ -1,0 +1,11 @@
+/* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navigation bar*/
+#navbar
+{
+    display: flex;
+    flex-direction: row;
+}

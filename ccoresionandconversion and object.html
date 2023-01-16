@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /*
+        string(123)//convert 123 to string//explicit
+        123 + ' '//this also convert 123 to string//implicit
+        Number('123')//explicit to number
+        +'123'//implicit to number
+        */
+       //object can be constant as they are reference datatype
+       const course={
+           lecture:10,
+           section:3,
+           title:'javascript',
+           notes:{
+               intro:"welcome to js course"
+           },
+           enroll()
+           {
+               console.log('you are enrolled');
+           }
+       }
+       course.enroll();
+       console.log(course.section);
+       course.price=999;
+
+
+       //factory function
+       function createcourse(title)
+       {
+           return
+           {
+               title: title,
+               enroll()
+               {
+                   console.log("successfull enrooll");
+               }
+           }
+       }
+       const course1=createcourse('javascript');
+       console.log(course1);
+
+
+       //constructor function
+
+       function Course3(title)
+       {
+           this.title=title;
+           this.enroll=function()
+           {
+            console.log("successfull enrooll");
+           }//new keyword return automatically
+       }
+       const course33=new Course3('javascript');
+       delete course33.title;//delete the title
+       course33.checken=function()
+       {
+        console.log("successfull enrooll");  
+       }//add the function 
+       course33.enroll();
+
+       console.log(course33.constructor);
+       console.log(course1.constructor);
+    </script>
+</body>
+</html>

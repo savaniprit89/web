@@ -1,0 +1,52 @@
+doctype html 
+html
+    head 
+        style
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul
+                div#logo 
+                    img(src="/static/1.jpg", alt="logo")
+                    | SP
+                li #[a(href="/") home] 
+                li #[a(href="/")  about] 
+                li #[a(href="/")  services] 
+                li #[a(href="/")  class info] 
+                li #[a(href="/")  contact us]
+        section#introsection
+            div welcome to savani dance acdemy 
+            div eat sleep dance repeat
+        section#missionsection
+            h2 our mission 
+            div.card  
+                h3 dance per
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/1.jpg", alt="")
+                    div.card-content
+                        p best dance academy in univese
+            div.card  
+                h3 dance as you like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/3.jpg", alt="")
+                    div.card-content
+                        p best dance academy in univese
+            div.card  
+                h3 expert teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/4.jpg", alt="")
+                    div.card-content
+                        p best dance academy in univese
+        section#sponserssection
+            h3 our sponsers 
+            div#sponsers 
+                img(src="/static/apple.png", alt="",class="spimage")
+                img(src="/static/hp.png", alt="",class="spimage")
+                img(src="/static/microsoft.jpg", alt="",class="spimage")
+        footer#footer 
+            | copyright 2019 harrydanceacademy.com |all right reserved
+        script 
+            include ../static/index.js

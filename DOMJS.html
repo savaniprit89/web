@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="container">
+
+    </div>
+    <script>
+let main=document.getElementById('main');
+console.log(main);
+
+let cont=document.getElementsByClassName('container')
+console.log(cont);//return all class name with container
+
+let sel=document.querySelector('.container')
+console.log(sel);//return 1 st with class container
+
+let sell=document.querySelector('#main>ul>li')
+console.log(sell);//return only 1st li
+
+let se=document.querySelectorAll('#main>ul>li');
+console.log(se);//return all li
+    </script>
+</body>
+</html>

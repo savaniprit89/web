@@ -1,0 +1,17 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "this is package",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "init": "^0.1.2"
+  }
+}

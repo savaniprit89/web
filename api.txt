@@ -1,0 +1,50 @@
+api is use to get data from website
+
+api send data in form of json ,xml,html
+
+
+client send requset to ou server form html,css,javascript
+our server send response in form of html,css,javascript
+
+if our server uses other data then our server send request for data through api to someelse sever and someone server send response through api to our server and our server can send response to client
+
+
+application programming interface is set of command,function ,protocol,object that programmer can use to create software or used to interact with external system
+
+
+api has mainly this things
+1)endpoint:one you want to get data///other thing added to complete it to url
+2)path-----https://sv433.net/jokeapiv2/joke/programming//here programming is path
+3)parameter----https://sv433.net/jokeapiv2/joke/programming?contains=debugging
+here contain is key  and after equal is query
+after question mark are parameter
+4)authentication--
+
+
+
+json =javascript object notation4
+
+
+
+if signup successfull then go another page and  not the go other page
+then
+if(response.statuscode==200){
+res.sendfile(__dirname,"/success.txt")
+}
+else{
+res.sendfile(__dirname,"/failure.txt")}
+
+
+
+
+if failure page has try again button then pressing on it
+app.post("/failure",(req,re)=>{
+res.redirect("/");
+})
+
+
+if we deposit on server then we have not specify port because it can run on any port so 
+
+we have to specify
+app.listen(process.env.PORT||3000,()=>{})//here process.env is for heroku server and it can differ
+from server to server and we can locally host on 3000 port

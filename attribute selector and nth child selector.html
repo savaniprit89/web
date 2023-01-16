@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con
+        {
+            margin: 34px 23px;
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+input
+{
+    display: block;
+}
+input[type='text']
+{
+    border: 2px solid red;
+}
+a[target]
+{
+    color: rgb(200, 255, 0);
+}
+a[target='self']
+{
+    color: brown ;
+}
+li:nth-child(3)
+{
+    color: chocolate;
+}
+li:nth-child(2n+0)
+{
+    color: rgb(210, 30, 114);
+}
+li:nth-child(3n+3)
+{
+    color: rgb(30, 210, 141);
+}/*n=0 starting*/
+li:nth-child(odd)
+{
+    background-color: aqua
+}
+li:nth-child(even)
+{
+    background-color:yellowgreen
+}
+    </style>
+</head>
+<body>
+    <h1><a href="http://google.com" target="blank"> go to google</a></h1>
+    <h1><a href="http://google.com" target="blank"> go to google</a></h1>
+    <h1><a href="http://google.com" target="self"> go to google</a></h1>
+    <h1><a href="http://google.com" > go to google</a></h1>
+    <div class="con">
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="enter yout name">
+            <input type="password"placeholder="enetr password">
+            <input type="submit" value="sibmit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>

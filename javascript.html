@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+
+    </div>
+</body>
+<script>
+    //script pachi rakhe atle biju badhu load thai jai pachi java script
+    console.log('hello owrld');
+    
+
+    //variables
+    var a=45;
+    var b="harry";
+    console.log(a + b);
+    c=56;
+    console.log(c);
+    c=-c;
+    console.log(c);
+    c=456+7;
+    console.log(c);
+    console.log("value of c+a is"+(c+a));
+    console.log(c*a);
+    console.log(c++);
+    console.log(--c);
+
+    //strings
+    var string="this";
+    var string1='can';
+    console.log(string+string1);
+    //jyare string vch double quote use then e single code ma surrounded and vise versa
+    var temp=`${string} is'"" stribng`;
+    console.log(temp);
+    var len=temp.length;
+    console.log(`length of temp is\n ${len} `)
+   // var y=new string("this");
+    document.getElementById('content').innerHTML='<h3>this is h3 heading </h3>'
+//string functions
+
+
+var str="thsi is string";
+var position=str.indexOf('is');//first occurence
+console.log(position);
+position=str.lastIndexOf('is');//last occurence
+console.log(position);
+
+var substr=str.slice(1,6);
+var substr=str.substring(1,6);
+var substr=str.substr(1,6);
+console.log(substr);
+
+
+var replaced=str.replace('string','savani');
+console.log(replaced);
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+var news=str.concat('new string');
+console.log(news);
+
+
+var z="          hdiash     asncka    ";
+console.log(z.trim());
+
+var char3=str.charAt(1);
+console.log(char3);
+console.log(str[2]);
+
+
+</script>
+</html>

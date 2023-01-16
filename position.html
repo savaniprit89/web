@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+
+
+        positions
+1)static-by default
+2)abosulte
+3)relative-----
+4)fixed---jo screen ma fix then fixed use
+5)sticky---gaame nya chipaki re toh sticky use
+        */
+        .box
+        {
+            border: 2px solid red;
+            width: 250px;
+            height: 250px;
+            margin: 2px;
+            display: inline-block
+        }
+        /*#box3
+        {
+            position: relative;
+            top: 34px;/* atle e purani postion thi 34 px atle eni juna postion thi relative
+            and purani postion ma gap
+        }
+        #box3
+        {
+            position: absolute;
+            left: 34px;
+            /*parent na relative  move thase
+        }
+        #box3
+{
+    position: fixed ;
+    right: 4px;
+}*/
+#box3
+{
+    position: sticky;
+    top: 3px;
+}
+        
+        .container
+        {
+            border: 2px solid red;
+            background-color: burlywood ;
+            height: 3444px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>

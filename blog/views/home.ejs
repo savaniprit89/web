@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+<h1>home</h1>
+
+<p> <%= startingcontent %> </p>
+<!-- *******<% console.log(posts); %>********consoling post object-->
+
+<!-- consoling title of post every time-->
+<%  for(var i=0 ; i< posts.length ; i++){  %>
+<h1><%= posts[i].title %></h1>
+<p><%= posts[i].content.substring(0,100)+ "..." %>
+<a href="/post/<%= post[i].title  %>"></a>
+</p>
+<%    }  %>    
+
+<%- include("partials/footer"); -%>

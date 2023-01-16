@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+const customstyle={
+color:"red",
+fontSize:"20px",
+border:"2px solid grey"
+}
+customstyle.color="pink"
+ ReactDOM.render(
+  <div>
+  <h1 style={{color:"black"}}>my favourit food</h1>
+  <h1 style={customstyle}>my favourit food</h1>
+  </div>,
+  document.getElementById('root')
+);
+

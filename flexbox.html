@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ /*flexbox used to align items in container*/
+
+.container
+{
+    height: 500px;
+    width: 100%;
+    border: 3px solid purple;
+    display: flex;
+
+    /*flex properties for flex conatianer*/
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+
+    flex-direction: column;
+    flex-direction: row;
+    /* aya size nani moti karvo toh wrap nathi thata box*/
+    /* flex-flow:row-reverse wrap*/
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-evenly;/*box ni vache space equal*/
+    justify-content: space-around;/*left and right ma equal space*/
+    justify-content: center;
+    align-items: center;
+   
+    align-items: flex-end;
+    align-items: flex-start; 
+    align-self:stretch;
+}
+.item
+{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid black;
+    margin: 3px;
+    padding: 6px;
+}
+#item1
+{
+    /*order: 40;order jenu vadhare e pachi
+    flex-grow: 3;jyare conatiner grow tyare e 3 sie thi grow thase bija karta
+    
+    flex-shrink: 3;/*same as par grow*/
+    flex-basis: 300px;
+    /*when flex direction is set to row flex basis control width*/
+     /*when flex direction is set to column flex basis control height*/
+}
+#item3
+{
+    flex: 2 2 230px;/*gro shrink basis*/
+    align-self: center;
+    align-self:flex-end;
+    align-self: flex-start;
+}
+    </style>
+   
+</head>
+<body>
+    <h2>this is flexbox</h2>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">thid box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5"> fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+</body>
+</html>

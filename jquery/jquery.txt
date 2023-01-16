@@ -1,0 +1,4 @@
+jquery used to reduce selection in javascript
+
+document.queryselector("h1")
+=====$('h1')

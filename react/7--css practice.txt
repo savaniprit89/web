@@ -1,0 +1,114 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+
+const date=new Date();
+const currentime=date.getHours();
+//above get how many hour has been now
+const customstyle={
+  color:""
+};
+let greet;
+if(currentime<12){
+  greet="good morning"
+  customstyle.color="red"
+}
+else if(currentime<18){
+  greet="good afternoon"
+  customstyle.color="green"
+}
+else{
+  greet="good night"
+  customstyle.color="blue"
+}
+ ReactDOM.render(
+  <div>
+  <h1 style={customstyle}>{greet}</h1>
+  </div>,
+  document.getElementById('root')
+);
+
+
+
+
+
+
+
+
+
+////////////making it into components
+
+
+index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+
+ ReactDOM.render(
+ <App />,
+  document.getElementById('root')
+);
+
+
+//normalyy have index.js have it not have list or div but have custom component app
+
+
+
+***************App.jsx
+
+import React from 'react';
+
+import Heading  from './Heading.jsx';
+
+
+function App(){
+    return <div>
+        <Heading />
+    
+    </div>
+}
+
+export default App;
+
+******************heading.jsx
+
+
+import React from 'react';
+
+
+function Heading(){
+const date=new Date();
+const currentime=date.getHours();
+//above get how many hour has been now
+const customstyle={
+  color:""
+};
+let greet;
+if(currentime<12){
+  greet="good morning"
+  customstyle.color="red"
+}
+else if(currentime<18){
+  greet="good afternoon"
+  customstyle.color="green"
+}
+else{
+  greet="good night"
+  customstyle.color="blue"
+}
+
+
+
+ return <h1 style={customstyle}>{greet}</h1>
+  
+}
+
+
+export default Heading;

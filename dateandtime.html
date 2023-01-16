@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+        <span id="time">
+            time is:
+        </span>
+    </div>
+    <script>
+        let now =new Date();
+        console.log(now);
+
+        let starting=new Date(1000);//1second from referenece time
+        console.log(starting);
+
+        // let newdate=new Date("2029-9-30");
+        //console.log(newdate);
+
+        //let newdate=new Date(year,month,date,hours,minutes,second,milliseconds)
+        let newdate=new Date(3020,4,6,9,3,2,34);
+        console.log(newdate);
+
+        let year=newdate.getFullYear();
+        console.log("year is ",year);
+        let date=newdate.getDate();
+        console.log("date is ",date);
+        let month=newdate.getMonth();
+        console.log("month is ",month);
+        let hour=newdate.getSeconds();
+        console.log("second is",hour);
+
+        newdate.setDate(39);
+        newdate.setHours(4);
+
+        console.log(newdate);
+       
+        
+        
+        console.log(Date.now());//milliseond from reference
+
+
+        setInterval(updatetime,1000);
+        function updatetime()
+        {
+            time.innerHTML=new Date();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+no sql
+document oriented
+cross platform
+store data document
+data is stored as bson
+database=database
+table=collections
+row=documents
+
+mongod=post process for database
+mongo=command line shell that connect to mongod
+mongod is neccessary
+
+we using powershell mongo to write command
+now compass is gui where we can write instead of mongo in shell
+
+
+mongoose connect between nodejs and mongod
+mongod is database

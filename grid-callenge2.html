@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.co
+        {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-gap: 10px;
+        }
+        div.nesteditem
+        {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 75px 500px 75px;
+            grid-gap: 10px;
+        }
+        div.mainsection
+        {
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-gap: 10px;
+        }
+        div.item
+        {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="co">
+        <div class="item" id="nav">
+            nav
+        </div>
+        <div class="nesteditem">
+            <div class="item" id="header">
+                header
+            </div>
+            <div class="mainsection">
+                <div class="item" id="artical">
+                    artical
+                </div>
+                <div class="item" id="ads">
+                    ads
+                </div>
+            </div>
+            <div class="item" id="footer">
+                footer
+            </div>
+        </div>
+    </div>
+</body>
+</html>

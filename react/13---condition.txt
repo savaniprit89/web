@@ -1,0 +1,81 @@
+cconditional based showing thing
+
+
+var silogin=true;
+
+function rendercondition(){
+if(islogin===true){
+return <h1> hello </h1>  }
+else{
+return <h1> hello </h1>///here it can be any html things
+
+
+}
+}
+
+
+function App(){
+
+return<div>
+{rendercondition()}
+</div>;
+
+}
+
+
+*************************
+
+function App(){
+
+return<div>
+{if(islogin===true){
+return <h1> hello </h1>  }
+else{
+return <h1> hello </h1>///here it can be any html things
+
+
+}}//here we cannot use this as these are statement not expression
+
+
+
+</div>;
+
+}
+******************************
+
+converting statement into expression
+
+
+iscloudy===true? bringumbrella() : bringsun();
+
+
+
+
+function App(){
+
+return<div>
+islogin===true? <h1> hello </h1>  : <login />
+
+</div>;
+
+}
+
+
+
+************************
+
+
+currenttime>12 ? <h1> </h1> : null
+currenttime>12 && <h1> </h1> //same meaning as above
+
+*******************
+fucntion form(props){
+
+return ( 
+<input tyoe="text>
+<input tyoe="password />
+{props.isregistered==false &&  (<input type=""password)}
+
+<buttuon type="submit" >{props.isregistered? "login" : "register"} 
+)
+}

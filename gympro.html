@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>savani fitness</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+         background: url('file:///C:/Users/addmin/Desktop/abc.jpg'); 
+         background-color: aqua;
+          color: white;
+        }
+        #img
+        {
+            width: 100vw;
+        }
+        .left
+        {
+            display: inline-block;
+
+position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        .mid
+        {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            
+        }
+        .right
+        {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+           
+        }
+        .navbar
+        {
+            display: inline-block;
+        }
+        .navbar li{
+        display: inline-block;
+
+        }
+        .navbar li a
+        {
+            color: white;
+            text-decoration: none;
+            padding: 25px;
+            font-size: 20px;
+        }
+        .navbar li a:hover,.navbar li a.active
+        {
+            text-decoration: underline;
+            color: yellow;
+        }
+        .left img{
+            width: 50px;
+    filter: invert(100%);
+        }
+        .left div
+        {
+            text-align: center;
+        }
+        .btn
+        {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid green;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+              }
+              .btn:hover
+              {
+                  background-color: greenyellow;
+              }
+              .container
+              {
+                  border:2px solid;
+                  margin: 106px 80px;
+                  padding: 75px;
+                  width: 33%;
+                  border-radius: 10px ;
+              }
+              .formgroup input
+              {
+text-align: center;
+display: block;
+width: 500px;
+padding: 1px;
+border:2px solid red;
+margin: 11px auto;
+font-size: 25px;
+border-radius: 10px;
+
+              }
+              .container h1{
+                  text-align: center;
+              }
+              .container button
+              {
+                  display: block;
+                  margin: auto;
+                  width: 23%;
+              }
+    </style>
+</head>
+<body>
+
+  
+  <header class="header">
+      <div class="left">
+
+        <img src="C:\Users\addmin\Desktop\41guFCeKMmL._SX425_.jpg">
+
+      
+<div>sai fitness</div>  
+ 
+</div>
+      
+      <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">fitness</a></li>
+            <li><a href="#">conatct</a></li>
+        </ul>
+      </div>
+      <div class="right">
+<button class="btn">
+call us
+</button>
+<button class="btn"> email us</button>
+      </div>
+  </header >
+  <div class="container">
+<h1>join th gym</h1>
+<form action="backend.php">
+    <div class="formgroup">
+        <input type="text" name="" placeholder="enter yout name">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="enter yout name">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="enter yout name">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="enter yout name">
+    </div>
+    <button class="btn">submit
+
+    </button>
+</form>
+  </div>
+</body>
+</html>

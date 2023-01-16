@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bulb
+        {
+            background-color: black;
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+        .center
+        {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="a" id="bulb">
+        abcdefgh
+    </div>
+<button id= "toggle" class="center">turn on</button>
+<script>
+let btn=document.getElementById('toggle')
+let bulb=document.getElementById('bulb')
+btn.addEventListener('click',colorchange)
+function colorchange(e)
+{
+    if(btn.textContent.includes('on'))
+    {
+        bulb.style.background="pink";
+        btn.textContent="turn off"
+
+    }
+    else
+    {
+        
+        bulb.style.background="black";
+        btn.textContent="turn on"
+    }
+
+}
+</script>
+</body>
+</html>
+
+
+<img src="bg.jpg" alt="" srcset="" id="e">
+<img src="icons.png" alt="" srcset="">

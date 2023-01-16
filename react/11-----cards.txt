@@ -1,0 +1,36 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'
+/*
+function Card(props){//props here property send to function
+return (
+  <div className='btn'>
+    <h2>
+  {props.name}
+    </h2>
+    <img src={props.img}>
+
+    </img>
+    <p>
+  {props.tel}
+    </p>
+    <p>
+{props.email}
+    </p>
+  </div>
+);
+}
+ReactDOM.render(
+  <div>
+  <h1>hello world</h1>
+  <input type="text" name="fname" id="fname" placeholder="enter your first name"></input>
+  <Card name="prit" img=""  tel="998999" email="abc.gmail.com" />
+  <Card name="savani" img=""  tel="998999" email="abc.gmail.com" />
+  <Card name="sp" img=""  tel="998999" email="abc.gmail.com" />
+  </div>,
+  document.getElementById('root')
+);
+////creating diffrent cars using components
+//in card  in line 27 we cannot give classname in that but give in function 
+//in card we can pass parameter
+*/

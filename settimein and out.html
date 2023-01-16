@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+        <span id="time">
+
+        </span>
+    </div>
+    <script>
+        console.log("this is tutorial 58");
+        //when funtion run after some time then settime out and run pnly once
+
+
+function greet(name,surname)
+{
+console.log("this is morning"+name+surname);
+}
+setTimeout(greet,3000,"harry","savani");//time in millisecond
+//setTimeout(greet(),3000)//wrong a it is calling function inside settimeout
+
+timeout =setTimeout(greet,3000,"harry","savani");
+console.log(timeout);
+clearTimeout(timeout);//clear the settimeout
+
+intervalid=setInterval(greet,100,"savani","prit");
+clearInterval(intervalid);//clear the setinterval
+
+function dtime()
+{
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(dtime,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn
+        {
+            padding: 34px;
+            background-color: brown;
+            border: 2px solid red;
+            color: white;
+            font-weight: bold;
+             cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime est vitae nihil temporibus nostrum recusandae distinctio deleniti neque eum! Illum obcaecati accusamus harum consectetur quibusdam, possimus unde error optio velit temporibus corrupti minus ipsum eius deleniti sapiente ea dicta vitae tenetur ipsa assumenda mollitia dolore molestiae distinctio reprehenderit! Quasi ad quae iusto. Natus a vitae aspernatur quaerat consequatur quidem quasi veritatis non. Laboriosam accusamus aperiam natus facilis veniam perspiciatis aspernatur voluptatem consectetur nisi earum optio distinctio ipsa laudantium rerum culpa illum deserunt eius, quos facere vitae? Tempora distinctio nemo corporis neque ab enim repellat cumque accusamus adipisci! Dicta in ratione labore fugit, modi hic magnam quisquam laborum molestias. Magni, eius. Provident labore repellat culpa doloribus tempora dolor quae quas? Minima deserunt nulla, non minus porro doloribus et fugiat dolorem odio neque commodi expedita? Eos aliquid necessitatibus nesciunt sed commodi minima facilis tenetur accusantium debitis maiores dicta voluptates ullam modi, magni magnam recusandae cupiditate illo ipsam, illum nostrum quibusdam? Error, ducimus. Reiciendis, unde ducimus. Accusamus laudantium ipsa enim assumenda voluptates debitis maxime veniam quidem doloremque velit, corrupti harum, expedita quia fuga repellendus autem quos eum tenetur, incidunt laboriosam minus. Illum neque dolor fugit, laborum, sed praesentium dolorem, officiis rerum quod blanditiis beatae. Non dolorum reiciendis deleniti provident cum blanditiis corrupti quibusdam porro hic sed odit, facilis impedit maiores natus doloribus aut. Fuga officiis voluptatibus id error in qui facere fugiat atque ad, adipisci illum, rem corporis perferendis incidunt neque consectetur vel at vero facilis odit a. Sed distinctio commodi illum quas optio? Ab cum quo at doloribus modi eius a labore excepturi. Explicabo distinctio quasi repudiandae deleniti numquam neque voluptate et debitis dicta perferendis iure doloremque suscipit est minus ducimus repellat placeat deserunt architecto corporis, eos molestias quo aspernatur ex asperiores. Ratione nulla quibusdam, nostrum vel consequuntur fugit necessitatibus impedit id.</p>
+    <button id="btn" onclick="thide()">submit now</button>
+    </div>
+    <script>
+        //event that clicking of anything
+       /* browser events:
+        click 
+        contextmenu 
+        mouseover/mouseout 
+        mousedown/mouseup mousebutton clicked 
+        mousemove
+        Submit
+        focus 
+        transition 
+        domconetent loaded*/
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run()
+        {
+alert('nouseover')
+        });
+
+        para.addEventListener('mouseout',function run()
+        {
+alert('nouseover')
+        });
+  function thide()
+  {
+      let btn = document.getElementById('btn');
+      let para = document.getElementById('para');
+      if(para.style.display != 'none')
+      {
+      para.style.display='none';
+      }
+      else
+      {
+          para.display.style='block';   
+           }
+  }
+    </script>
+</body>
+</html>

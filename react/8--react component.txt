@@ -1,0 +1,50 @@
+index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import Heading  from './Heading.jsx';
+import List from './List'
+function Heading1(){
+  return <h1>prit</h1>
+}
+
+ ReactDOM.render(
+  <div>
+ <Heading1 />
+ <Heading />
+ <List />
+  </div>,
+  document.getElementById('root')
+);
+
+//splitting website into components
+//function name in pascal case
+//we have done splitting in line 13 and function on line 7 and we have place self closing tag
+//here also messing up takes place so we will import and export components
+//create Heading.jsx where index.js is present
+//writing import and export
+//now component come from other file
+
+
+
+/////////////heading.jsx
+import React from 'react';
+
+function Heading(){
+    return <h1>savani</h1>
+  }
+
+
+
+  export default Heading ;
+  
+/////////list.jsx
+import React from 'react';
+
+function List(){
+    return <ul><li>food</li>
+    <li>i like</li></ul>
+}
+export default List;

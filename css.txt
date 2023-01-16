@@ -1,0 +1,52 @@
+p{color:blue;}
+selector property value
+
+
+inline css  ----tag ni andar j te
+internal css ----head ni andar style tag lagadi
+external css
+
+
+z index used--  to move to up element than other
+element which z index is more is up and less is down  and z index used when position is absolute
+
+selfclosing tag--- br
+<h1 size="3"></h1>//here size is attribute
+
+children sitting on parent
+<div>
+<h1>i am <span>pro</span> grammer</h1>
+</div>
+
+if anything to send on left then use float =left
+photo is in phone about z-index
+
+
+<body onload="alert('hello')"></body>///javascript in body tag
+
+
+sending function as argument
+
+minfy used to remove space of js and css to save memory
+
+
+***************************************
+css display
+
+
+block:whole width --p,h1,div,li,ul,form
+inline:as much as it need-span ,img ,a
+inline-block---element are near and we can change width
+none--element will not be there it is temprary removed
+
+*********************
+css position
+
+relative-means relative to its original position
+absolute-means relative to its parent
+fixed- fixed even if we scroll
+
+///////////////////////////////////////
+
+.innerhtml to change heading like thing text
+.setattribute to change attribute

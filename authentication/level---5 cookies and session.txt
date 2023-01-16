@@ -1,0 +1,105 @@
+require('dotenv').config();//requiring and creating .env file and storing there enivironment variables
+const express=require("express")
+const bodyparser=require("body-parser")
+const ejs=require("ejs")
+const mongoose=require("mongoose")
+const session = require('express-session')
+const passport=require("passport")
+const passportlocalmongoose=require("passport-local-mongoose")//it manage salt and hash itself not to impllement
+
+
+const app=express();
+
+app.set('view engine','ejs')
+
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(express.static("public"));
+app.use(session({
+    secret: 'our little secret.',
+    resave: false,
+    saveUninitialized: true,
+  }))
+
+  app.use(passport.initialize());
+  app.use(passport.session());
+
+mongoose.connect("mongodb://localhost:27017/userdb",{useNewUrlParser:true, useUnifiedTopology: true})
+
+const userschema= new mongoose.Schema({
+    name:String,
+    password:String
+});
+userschema.plugin(passportlocalmongoose);
+
+const user=mongoose.model("user",userschema);
+passport.use(user.createStrategy());
+passport.serializeUser(user.serializeUser());//serialize create cookies
+passport.deserializeUser(user.deserializeUser());//deserialize means destroy cookies
+
+app.get("/",(req,res)=>{
+    res.render("home")
+})
+
+app.get("/login",(req,res)=>{
+    res.render("login")
+})
+
+app.get("/register",(req,res)=>{
+    res.render("register")
+})
+app.get("/secrets",function(req,res){
+    if(req.isAuthenticated()){
+        res.render("secrets");
+    }
+    else{
+        res.redirect("login")
+    }
+})
+
+
+//now any one once login && then he can directly go to secrets page due to cookies and already authenticated
+//session is quit to chrome so when we start chrome again then we have to login again
+app.post("/register",(req,res)=>{
+    user.register({username: req.body.username},req.body.password, function(err,user){
+        if(err)
+        {
+            console.log(err)
+            res.redirect("register")
+        }
+        else{
+            passport.authenticate("local")(req,res,function(){
+                res.render("secrets")
+            })
+        }
+    })
+})
+
+app.post("/login",(req,res)=>{
+    
+    const userr =new user({
+        username: req.body.username,
+        password: req.body.password
+    });
+    
+    req.login(userr,function(err){
+        //if login successfully or register then go to secrets page
+        if(err)
+        {
+            console.log(err)
+        }
+        else{
+            passport.authenticate("local")(req,res,function(){
+                res.redirect("secrets");
+            })
+        }
+    })
+})
+
+app.get("/logout",(req,res)=>{
+    req.logout();
+    res.redirect("/");
+})
+
+app.listen(80,()=>{
+    console.log("server is running")
+}) 

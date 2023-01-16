@@ -1,0 +1,22 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+const name="prit";
+ ReactDOM.render(
+  <div>
+  <h1>prit {name+""+"savani"}{`${name} ${"savani"}`} {3+4} {Math.random()}</h1>
+  <ul>
+    <li>noodles</li>
+    <li>food</li>
+  </ul>
+  </div>,
+  document.getElementById('root')
+);
+
+//we inserted html inside javascipt using jsx ,,futher we can also insert javascript inside that html
+//we have done on line 9 that name giving in html
+//oncr curly brases are open we can write any javascript
+//we cannot write javascript statement like if
+//we can write expressions

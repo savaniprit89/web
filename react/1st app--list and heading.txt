@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <div>
+  <h1>prit sa vsni </h1>
+  <ul>
+    <li>noodles</li>
+    <li>food</li>
+  </ul>
+  </div>,
+  document.getElementById('root')
+);

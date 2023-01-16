@@ -1,0 +1,49 @@
+changing state accoding to condition
+
+it is react states
+
+
+UI=f(State)
+
+UI=f(60)  ---water
+UI=f(-10)  ---ice
+
+
+
+function App(){
+
+var isdone=false;
+
+return <p style={isdone ? {textdecoration:"line"} : null> buy milk </p>
+
+}
+
+
+//above programming is known as declarative programming
+
+
+
+***************************imperative programming
+function strike(){
+document.getelementbyid("root").style.textdecoration="line"
+}
+
+function tstrike(){
+document.getelementbyid("root").style.textdecoration=null
+}
+
+
+
+function App(){
+
+var isdone=false;
+
+return
+<div>
+ <p style> buy milk </p>  
+<button onclick={strike} > chaange to strike </button>
+<button onclick={tstrike} > chaange to back </button>
+
+</div>
+
+}

@@ -1,0 +1,56 @@
+math.jsx
+
+
+const pi=3.14
+
+
+function doublep(){
+return pi*2
+}
+
+function triplep(){
+return pi*3
+}
+
+export deafault pi  //this is default export
+
+export {doublep ,triple p};
+
+//exporting multiple 
+//only one default export per file
+// we cannot give other name to other exports such as double for doublep we cannot give
+//only default export name may be changed
+
+
+
+
+
+
+*************index.jsx
+
+
+we can give different name to import not same name
+
+import pie,{doublep,triplep} from "./math.jsx"
+
+
+
+reactdom.render(<ul>
+<li>{pie</li>,
+<li>{doublep()}</li>
+<li>{triplep()}</li>
+</ul>
+               )
+
+////////////////we can do also like this
+
+import * as pi from "./math.jsx"
+
+///wild card everything from module
+
+reactdom.render(<ul>
+<li>{pi.default}</li>,
+<li>{pi.doublep()}</li>
+<li>{pi.triplep()}</li>
+</ul>
+               )

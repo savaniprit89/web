@@ -1,0 +1,57 @@
+third parth o-autho
+
+
+i am build bracebook
+when i signup in it i don't have any friends in it
+so we ask them to access permission of facebook so we can tell them which facebook friends are using bracebook
+
+
+on signup page we have option of signup with facebook
+once person click bracebook make get request to facebook asking them friends of that person
+facebook return post request of name and email of friends
+now we can compare with our database of users and give which users are common
+**********************************
+OAuth---open authorisation
+
+steps-1 granular access levels
+when user login with facebook ,we can request specific things from facebook
+profile,email etc
+
+step-2 read/read-write access
+only read profile,email
+or wordpress have to post to facebook account means write operation
+
+step-3 revoke access
+user can revoke access of bracebook by going to facebook account and revoking
+
+
+how it works
+
+step-1
+set up your app
+
+step-2
+redirect to authenticate
+
+when user click login with facebook step 3
+
+step-3
+goes to page user log in facebook
+
+step-4
+grant permission
+now user need to grant permission which bracebook need of facebook
+
+step-5
+recieve authoriasation code
+if they successfully done it then our website recieves Auth code
+these auth code allow us to check that they have login
+
+ further we can exchange auth code with facebook and we recieve access token
+and save that access token in database
+
+auth code--single ticket in cinema ---means single time login into website
+access token---yearly pass for cinema----means user can now multiple time login with facebook not every time grant permssion 
+
+auth code---successfully manage to login with facebook
+access token ---acess piece of information of friend and profile

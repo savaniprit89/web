@@ -1,0 +1,85 @@
+var numbers=[1,2,3,45,55];
+///map  --it allow to create a new array wiyh doing somwthing with each item
+
+
+version-1
+function doble(x){
+return x*2;
+}
+
+1)const newnumbers=numbers.map(doble)///inside map there should be a function
+2)const newnumbers=numbers.map(function doble(x){
+    return x*2;
+    })
+version-2 using for afterEach
+
+var newnumbers=[]
+function doble(x){
+    newnumbers.push(x*2)
+    }
+
+1)numbers.forEach(doble)
+2)newnumbers.forEach(function doble(x){
+    newnumbers.push(x*2)
+    });
+
+
+//filter --create new array by keeping only item that return treu
+
+const newnumbers=numbers.filter(function(num){
+    return num>10;
+})
+
+var newnumbers=[];
+numbers.forEach(function(num){
+    if(num<10){
+        newnumbers.push(num)
+    }
+})
+//output{4,5}
+
+
+///reduce---accumulate value by doing domething with each item in array
+
+numbers.forEach(function(num){
+    newnumbers+=num;
+
+})
+
+numbers.reduce(function(accumulator,currentnumbver){
+    return accumulator+currentnumbver
+})
+
+///find --find first item that match from array
+
+numbers.find(function (num){
+    return num>10
+})
+
+
+///findindex ---it find index of first item 
+numbers.findIndex(function (num){
+    return num>10
+})
+
+
+//arrow functions
+
+
+
+numbers.findIndex( (num,index)=>{
+    return num>10
+})//here anonymous function without name
+//arrow function delete function keywors
+
+//only one paramter then
+numbers.findIndex( num=>{
+    return num>10
+})//here parenthis removerd from parametr
+
+
+
+
+//only single expression
+
+numbers.findIndex( num=>num>10)

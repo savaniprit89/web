@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            background-color: greenyellow;
+        }
+        .box
+        {
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            position: relative;/*to move in page so*/
+            animation-name: savani;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+animation-fill-mode: forwards;/*animation last ma kya ataki rese*/
+animation-timing-function: ease-in;
+animation-timing-function: ease-in-out;
+animation-timing-function: ease-out;animation-timing-function: ease;
+animation-delay: 3s;
+animation-direction: normal;
+animation-direction: alternate-reverse;
+animation-name: savani1;
+/*animation: animation-name animation duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+animation: savani 5s ease-in 1s 12 backwards*/
+        }
+        @keyframes savani1 {
+            0%
+            {
+top: 0px;
+left: 0px;
+            }
+            25%
+            {
+                top: 250px;
+left: 0px;
+            }
+            50%
+            {
+                top: 250px;
+left: 250px;
+            }
+            75%
+            {
+                top: 0px;
+left: 250px;
+            }
+            100%
+            {
+                top: 0px;
+left: 0px;
+            }
+            
+        }
+        @keyframes savani {
+            from
+            {
+width: 200px;
+            }
+            to
+            {
+width: 400px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

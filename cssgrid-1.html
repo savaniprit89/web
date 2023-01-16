@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con
+        {
+display: grid;
+grid-template-rows: repeat(5,1fr);
+/*grid-auto-rows: 2fr;1st 2nd 3rd mate mention and bija badha mate auto apply thsase*/
+grid-template-columns:repeat(4,1fr);
+grid-column-gap: 3rem;
+grid-row-gap: 3em;
+justify-content: center;
+        }
+        .item
+        {
+            background-color: blue;
+            border: 2px solid green;
+        }
+       /* .item:first-child
+        {
+            /*grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column: 1/span 3;
+            grid-row: 1 /span 3;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">this is item1</div>
+        <div class="item">this is item2</div>
+        <div class="item">this is item3</div>
+        <div class="item">this is item4</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+    </div>
+</body>
+</html>

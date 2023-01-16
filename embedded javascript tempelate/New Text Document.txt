@@ -1,0 +1,21 @@
+node will look for ejs files in views folder
+
+
+app.render("list",{kindofday:'day'})//here it will pass foo
+
+
+
+***************************
+list.ejs//it accept html code also
+<body>
+
+<h1> <%=kindofday%>  </h1>//here it will replace by  value that is passed
+
+*****
+if else like
+
+<% if (kindofday=="saturday"||kindofday=="sunday"){ %>
+<h1 style="color: purple"><%=kindofday%> todolist</h1>
+<% } else { %>
+<h1 style="color: blue"><%=kindofday%> todolist</h1>
+<% } %>

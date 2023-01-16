@@ -1,0 +1,52 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+function Heading1(){
+  return <h1>prit</h1>
+}
+
+ ReactDOM.render(
+ <App />,
+  document.getElementById('root')
+);
+
+
+//normalyy have index.js have it not have list or div but have custom component app
+*******************************heading.jsx
+import React from 'react';
+
+function Heading(){
+    return <h1>savani</h1>
+  }
+
+
+
+  export default Heading ;
+  
+********************************list.jsx
+import React from 'react';
+
+function List(){
+    return <ul><li>food</li>
+    <li>i like</li></ul>
+}
+export default List;
+
+*********************************App.jsx
+
+import React from 'react';
+
+import Heading  from './Heading.jsx';
+import List from './List'
+
+function App(){
+    return <div>
+        <Heading />
+        <List />
+    </div>
+}
+
+export default App;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object can be made without class in javascript
+        class Product
+        {
+            constructor(itemname,price)
+            {
+                this.itemname=itemname;
+                this.price=price;
+            }
+            get pricevalue()
+            {
+                return this.price;
+            }
+            set pricevalueset(value)
+            {
+                this.price=value;
+            }
+            discountvalue()
+            {
+                return this.price-2;
+            }
+        }
+        let pencil= new Product('pencil',3);
+        let p=pencil.pricevalue;//as getter ans setter no parenthesis needed
+        let pp=pencil.discountvalue();//here perenthisis
+
+        class Furniture extends Product
+        {
+constructor(itemname,price)
+{
+    super(itemname,price);
+}
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

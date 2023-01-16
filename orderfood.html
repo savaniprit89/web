@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery service</title>
+    <style>
+        /* css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navigation bar*/
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+top: 0px;    
+}
+/*logo*/
+#logo
+{
+margin: 10px 34px;
+}
+#logo img{
+height: 50px;
+width: 50px;
+margin: 3px 6px;
+}
+/*lsit items*/
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: -1;
+   opacity: 0.4;
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+/*padding here so hover ma dekhase*/
+#navbar ul li a{
+color: white;
+display: block;
+padding: 3px 23px;
+border: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+color:black;
+background-color: white;
+border-radius: 10px;
+}
+
+/*home section*/
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    background-color: yellowgreen;
+    height: 75%;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+#home h1
+{
+    color: white;
+    text-align: center;
+}
+#home p
+{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.primary
+{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.hsecondary
+{
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.center
+{
+    text-align: center;
+}
+.btn
+{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*services section*/
+.services
+{
+    margin: 55px 34px;
+    display: flex;
+    height: 55%;
+
+}
+.services .box
+{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: gray;
+}
+.services .box img
+{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+.clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section
+{
+    height: 344px;
+}
+#client-section::before
+{
+    content: "";
+    position: absolute;
+    background-color:blanchedalmond;
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity:0.5; 
+}
+.clients img
+{
+    height: 140px;
+}
+.client-item
+{
+    padding: 34px;
+}
+.services-container
+{
+    height: 50%;
+    background-color: chartreuse;
+}
+/*cmtact section*/
+.contact
+{
+    position: relative;
+}
+.contact::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: coral;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+.contactbox input,.contactbox textarea
+{
+width: 100%;
+padding: 0.4rem;
+}
+.contactbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+.contactbox form
+{
+    width: 40%;
+}
+  
+  .contactbox form label
+{
+    width: 40%;
+    font-size: 1,3rem;
+}
+
+/*phonecss*/
+@media (max-width:1100px)
+{
+    #navbar ul li a{
+color: white;
+display: block;
+padding: 3px 10px;
+border: 15px; 
+text-decoration: none;
+}
+    .services
+    {
+        flex-direction: column;
+    }
+    .clients
+    {
+        overflow: hidden;
+    }
+    #navbar
+    {
+        flex-direction: column;
+    }
+    #home
+    {
+        height: 280px;
+        padding: 3px 68px ;
+    }
+    #home::before
+    {
+        height: 370px;
+    }
+    #home p{
+        font-size:13px ;
+    };
+    h1.primary
+    {
+        font-size: 15px;
+        text-align:left ;
+    }
+    .clients
+    {
+        flex-wrap: wrap;
+
+    }
+    .clients img
+    {
+        width: 66px;
+padding:2px 6px
+    };
+}
+</style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="nlinemeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="">home</a></li>
+            <li class="item"><a href="">services</a></li>
+            <li class="item"><a href="">about us</a></li>
+            <li class="item"><a href="">contact us</a></li>
+            <li class="item"><a href="">founder</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primary">
+            welcome to my online meal
+        </h1>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pers velit quidem nulla necessitatibus incidunt neque illo, quibusdam soluta illum minus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ! Pariatur quisquam facere molestiae quia ab tenetur?</p>
+<button class="btn">
+    order now
+</button>    
+</section>
+<section class="services-container">
+    <h1 class="primary center" >
+      our services
+
+    </h1>
+    <div class="services">
+        <div class="box">
+        <img src="C:\Users\addmin\Desktop\2-------+\manorath.  dt.18.11.2021\phota\_MG_3456.JPG" alt="" >
+        <h2 class="hsecondary center" >food odering</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt in beatae quos nihil nisi molestiae voluptas natus voluptatum, quidem accusantium.</p>
+    </div>
+    <div class="box">
+        <img src="C:\Users\addmin\Desktop\2-------+\manorath.  dt.18.11.2021\phota\_MG_3456.JPG" alt="" >
+        <h2 class="hsecondary center">food odering</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt in beatae quos nihil nisi molestiae voluptas natus voluptatum, quidem accusantium.</p>
+    </div>
+    <div class="box">
+        <img src="C:\Users\addmin\Desktop\2-------+\manorath.  dt.18.11.2021\phota\_MG_3456.JPG" alt="" >
+        <h2 class="hsecondary center">food odering</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt in beatae quos nihil nisi molestiae voluptas natus voluptatum, quidem accusantium.</p>
+    </div>
+</div>
+</section>
+<section id="client-section">
+    <h1 class="primary center">
+        our clients
+    </h1>
+    <div class="clients">
+        <div class="client-item">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="">
+        </div>
+        <div class="client-item">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="">
+        </div>
+        <div class="client-item">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="">
+        </div>
+        <div class="client-item">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="">
+        </div>
+        <div class="client-item">
+            <img src="C:\Users\addmin\Desktop\2-------+\Y.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <h1 class="primary center">contact us</h1>
+    <div class="contactbox">
+        <form action="">
+            <div class="formgroup">
+                <label for="name">name:</label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+            <div class="formgroup">
+                <label for="email">email:</label>
+                <input type="email" name="name" id="name" placeholder="enter your mail">
+            </div>
+            <div class="formgroup">
+                <label for="phone">phone number</label>
+                <input type="phone" name="name" id="name" placeholder="enter your phome">
+            </div>
+            <div class="formgroup">
+                <label for="name">message</label>
+                <textarea name="message" id="name" placeholder="enter your message"></textarea>
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="center">
+        copyright&copy; www.myonlinemeal.com all right reserve
+    </div>
+</footer>
+</body>
+</html>

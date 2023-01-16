@@ -1,0 +1,54 @@
+email                 hash
+angela@gmail.com   qwertyuiop
+john@gmail.com     1234rty
+abc@gmail.com      qwertyuiop
+cdef@gmail.com     qwertyuiop
+
+
+here 3 password has same password so same hash
+
+so now hacker create common password hash table
+then compare with hash in table
+
+and decoded that password is qwerty
+
+
+
+
+
+
+
+hashing and salting
+
+password---hash function---> hash
+
+password + salt---hash function -->hash
+
+salting is random set of character
+
+
+
+email             password        salt       hash
+angela@gmail.com   qwerty          sjbcb      bjbcjb
+john@gmail.com     1234              bjcbaj    zvzcmc
+abc@gmail.com      qwerty          abjbj      lhfjkf
+cdef@gmail.com     qwerty          yiwyri       jvjavd
+
+now hash are not save
+
+during login salt are added
+
+
+
+here we above use is md5  20000000000000000 md5/second
+we use bcrypt algorithim which is slow  17000 bcrypt/secong
+
+
+
+salt rounds
+
+qwerty + 5678  ---->hash
+hash  + 5678   ----->hash1
+hash1  + 5678  ------> hash2
+
+these are salt rounds

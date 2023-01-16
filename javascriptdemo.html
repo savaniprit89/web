@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>demo js</h1>
+    <button>namaste world</button>
+   
+    <script>
+       let bu= document.querySelector('button');
+       bu.addEventListener('click',showmsg);
+       function showmsg()
+       {
+        alert("namaste world");
+        let name=prompt('enter name of student');
+        bu.textContent='namaste'+name;
+
+       }
+       /*
+       async ---jo javascript ne immediately run karavani hoi toh
+       defer----pela bija kok scipt ne download ne pachi ane load then this use and script are loaded in order
+       */
+
+    </script>
+</body>
+</html>
