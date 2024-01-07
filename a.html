@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello javascript");  //semicolon or not then work
+        //  single colon or double colon
+
+        //variable
+        name="prit";
+        age=18;
+        x=null;  // pata nai pn andar khali value che
+        y=undefined;   //pata nai undar kya hai
+        z=true;
+
+        //dynamically typed
+        //number(float,decimal,integer), string,boolean(true,false),undefined,null  //primitive
+        //non primitive --object,array
+        let a;//undefine
+        let b=null //null
+
+
+
+       // let                   // cannot be redeclared but can be updated. block scope
+        //var             //variable can be re declared and updated. global scope
+        //const            //not re declare not updated.block scope
+        console.log(name,age)
+        console.log(typeof(age))
+        let ab=10
+        ab=11  //can be updated
+
+        //const varioable cannot be changed
+        //const object ni key ne change
+        /*  */  //not executed
+
+//object
+        let my={
+            name:"prit",
+            age:23
+        }
+        console.log(my)
+        console.log(my.age)
+        console.log(my["name"])
+        my['age'] =776;
+        console.log(my.age)
+
+
+        //arthmetic operator
+        //  +
+        //  - 
+        //  *
+        // /               moduls(%)  expo (**)  a**b (a raiseto b)
+
+        //unary   a++ ,a--  (pre and post)(pre pela value change and pachi and print)
+        //assigment =,  a+=1(a=a+1),-=,*=,%=,**=
+        //comparison ==(equal to) !=(not equal to)  ===(euqal to an type)  !===(not qual & type)
+        // a=5 b="5"  a==b (true)  a===b(false),>,>=,<,<=
+
+        //logical && ,||,!
+
+        let num1=2
+        let num2=3
+        let num3= num1+num2
+        console.log(num1+num2)
+        console.log("num2 is ",num3)
+
+        //conditional
+        //if(){}
+        //if(){}else{}
+        //if(){} else if(){} else{}
+        
+        //ternary 
+        //let age=17
+        //let result= age>18? "adult" :"not adult";
+
+
+        //alert("hellp")
+        //let name=prompt("hello")  //input lai sake
+
+
+        //loops
+        for(let i=0;i<=5;i++){
+
+        }
+
+        //uper var use then eni value loop pcahi pn survive becuase block scope
+
+        //for(let i=1;i>=0;i++){}
+
+
+        //while(condition){}   //initialization pel and  updatation andar loop ni
+        //do{}while(condition)
+        //for -of     for(let val of strval){}    //string and array iterate
+        let ad='ksdn'
+        for(let str of ad){
+            console.log(str)
+        }
+
+        //for in object in keys  for(let key in keyobj){}
+        for(let str in my){
+            console.log(str)
+        }
+
+
+
+        //string
+        let str1="snksnskd"  //zero index thi start
+        // console.log(str1[0])
+
+        //template iteraks
+        let up=`the name is ${my.age}`;  // bov badhi var coma use nai
+        console.log(`the name is ${my.age}`);
+
+        //  console.log("sdsfksfksn \n jsbjdbsj")  \t (tab) \n(new line)
+//string methods:-
+        //str.length
+        //str.toUpperCase()
+        //str.toLowerCase()
+        //str.trim()
+//str.slice(start,end)  //end not include
+//str.concat(st2)
+//str.replace(old,new)
+//str.charAt(index)
+        //string are immutable
+        //so change then new string create  or use string methods
+        str1="sdnsd"
+        str1=str1.replace('a',"h")
+
+
+        //arrays   //type object
+        let heroes=['a','b','c'];
+        let abcd=[1,2,3,4];
+        let info=['a',1];
+        console.log(info.length)
+console.log(info[0])
+
+for(let i=0;i<heroes.length;i++){
+    console.log(heroes[i])
+}
+
+for(let h of heroes){
+    console.log(h)
+}
+
+heroes.push('d','e')  //at the end
+let out=heroes.pop()//delete from and return
+console.log(heroes)
+console.log(out)
+console.log(heroes.toString())
+//aya change old array ma j
+
+let arr1=heroes.concat(info)//nava arrray me return
+heroes.unshift('a')  //add to start
+let a1=heroes.shift()// delete from start and return
+console.log(a1);
+console.log(arr1)
+
+//slice  do not change in original array  slice(start,end)
+let s1=heroes.slice(0,2)
+console.log(s1)
+
+//splice change in original array  splice(start,delete count,new ele)
+//splice(2,2)  two element delete from 2
+//splice(2,0,101)  2 nd element ma jai ne ekai delete nai and add 101
+//splice(2,1,101)  aa replace
+//spice(4)  //aaam 4th index thi badhu return thase
+heroes.splice(2,2,'p','q')
+console.log(heroes)
+
+
+
+
+
+
+
+
+
+//function and methods
+
+/*
+function functionName(param1 ,param2){
+
+        return
+//return pachi code lakhu e execute nai thai
+}
+let s=functionName()
+*/
+
+//arrow function compact way
+let functionName=(param1,param2)=>{
+    return 
+}
+let a11=functionName(1,2)
+///function ni vlue store 
+
+
+//FOREACH METHOD  (METHOD KOI OBJECT THI ACCES THAI)
+//heroes.forEach(callback)
+heroes.forEach((val,index)=>{
+    console.log("sjdb")
+})
+
+//higher order func/method --for each  
+//these uses other function as paramter(callback) or function return
+
+//map create new array with result of some operation  
+//arr.map(callback(value,index,arrr))
+let newheroes=heroes.map((val)=>{
+    return val*1;
+})
+console.log(newheroes)
+
+
+//filter  new array that give true condition for filter
+let newarr=heroes.filter((val)=>{
+    return val%2 == 0;
+})
+
+
+//reduce perform some operation and reduce array to single value and return i
+let h1=heroes.reduce((res,curr)=>{
+    return res+curr;
+})
+    </script>
+</body>
+</html>
